@@ -10,5 +10,11 @@ public class QuartoTeste {
         //Cortisol ideal é de 6 a 18.4
         boolean resultadoCortisol = cortisol >= 6.0 && cortisol <= 18.0;
         System.out.printf("Cortisol: %b\n", resultadoCortisol);
+
+        if (resultadoCortisol == true) {
+            System.out.printf("Cortisol está normal");
+        } else if (resultadoCortisol == false) {
+            System.out.printf("Cortisol está anormal");
+        }
     }
 }
